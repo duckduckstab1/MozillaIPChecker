@@ -1,0 +1,9 @@
+<script type="application/javascript">
+  $(function() {
+    $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+      function(json) {
+        document.write("Your IP address is seriously that: ", json.ip);
+      }
+    );
+  });
+</script>
